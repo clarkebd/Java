@@ -49,11 +49,14 @@ public class AssignSeat
                 {
                     System.out.printf("Seat %d still available in First Class. Booking it for you!\n", loop);
                     first[loop]=true;
-                    return loop;
+                    
+                    return loop; //i.e. return seat # booked in first (0-4)
                 } 
             }
-        System.out.print(Arrays.toString(first));
-        return 0;
+                    
+                    
+        //System.out.print(Arrays.toString(first));
+        return 99; // we weren't able to book a seat in First, so return 99
     }
     
 
