@@ -1,6 +1,6 @@
 /**
  * @author Brian
- * test git change
+ * 
  */
 
 package AirplaneReservations;
@@ -20,16 +20,27 @@ public class Airplane {
         boolean[] allSeats; // keep track of returned reserved seats with this
         allSeats = new boolean[10];
         
-        
+        //display welcome message
         newReservation.displayWelcome();
+        
+        //ask them which class they want to book in and return that value to 'area'
         int area = newReservation.askClass();
+        
         
         if (area==1) {
             System.out.print("\nSeating desired in First Class.\n");
-            System.out.print("Booking seat now....\n");
+            System.out.print("Attempting to book seat ....\n");
             bookedFirst = newReservation.bookFirst();
-            System.out.printf("bookedFirst = %d", bookedFirst);
             
+            if (bookedFirst!=99) {
+            System.out.printf("bookedFirst = %d", bookedFirst);
+            }
+            else
+            {
+                System.out.print("Sorry, First class is full!");
+                AirplaneReservations.checkSpaceAvailable checkCoach = new AirplaneReservations.checkSpaceAvailable.offerChoice();
+                
+            }
             //maybe create a 10 space array here and fill in with the returned result from this
             //so this local array will keep track of which seats are already booked! 
             allSeats[bookedFirst]=true;
