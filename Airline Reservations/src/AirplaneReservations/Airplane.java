@@ -12,11 +12,11 @@ public class Airplane {
         int bookedCoach;
         int area=99; // used for menu selection
         
-        // used to track all seats
+      // array to track ALL seats
         boolean[] allSeats; 
         allSeats = new boolean[10];
         
-        //display welcome message
+      //display welcome message
         AssignSeat newReservation = new AssignSeat();
         newReservation.displayWelcome();
   

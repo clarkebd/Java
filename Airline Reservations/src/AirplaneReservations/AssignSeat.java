@@ -30,12 +30,14 @@ public class AssignSeat
         return area;
     }
 
-
+    // array to keep track of available coach seats. Had to keep outside of method
+    // so array would be maintained after returning. Arrays start at 0 always, so
+    // added 5 to get correct coach seat #'s (i.e. 5-9)
+    boolean[] coach = new boolean[5+5]; 
+ 
     public int bookCoach()
     {
-            boolean[] coach = new boolean[5+5]; // arrays start at 0, so add 5 to get correct coach seat #'s
-            
-              //check if space in coach i.e. seats (5-9)
+              //check if space in coach i.e. seats (5-9), if so assigned seat.
                 for (int loop=5;loop<10;loop++)
                 {
                     if (coach[loop]==false)
@@ -46,6 +48,6 @@ public class AssignSeat
                         return loop;
                     } 
                 }       
-          return 99;                
+          return 99;  // return 99 if no seats in coach are empty               
     } // end bookCoach
 } // end CLASS

@@ -11,7 +11,7 @@ public class CheckSpaceAvailable
 {
     public int offerChoice()
     {
-         // Since no space available, offer choice in Coach
+         // Since no space available in First, offer choice in Coach
             System.out.print("\nWould you like to try a seat in Coach?\n");
             System.out.print("1 - Yes\n");
             System.out.print("2 - No\n");
