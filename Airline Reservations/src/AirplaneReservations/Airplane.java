@@ -78,6 +78,7 @@ public class Airplane {
             }
         } // end IF Coach
         
+      //Display Seating Chart 
         if (area==3)
         {
             for (int loop=0;loop<10;loop++)
