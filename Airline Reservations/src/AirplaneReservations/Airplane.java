@@ -24,7 +24,6 @@ public class Airplane {
      {
         //ask which class to book in and return that value to 'area'
         int wantCoach = 0;
-
         area = newReservation.askClass();
 
         if (area==1)
@@ -52,10 +51,8 @@ public class Airplane {
                     CheckSpaceAvailable checkCoach = new CheckSpaceAvailable();
                     wantCoach = checkCoach.offerChoice();
                 }
-            }
-                      
-                
-        } // end IF FIRST
+            }     
+        } // end IF - First Class
         
         
         if (area==2 || wantCoach==1)       
@@ -76,7 +73,7 @@ public class Airplane {
                 //checkSpaceAvailable checkCoach = new CheckSpaceAvailable();
                 //wantCoach = checkCoach.offerChoice();
             }
-        } // end IF Coach
+        } // end IF - Coach Class
         
       //Display Seating Chart 
         if (area==3)
@@ -93,23 +90,6 @@ public class Airplane {
                 }
             }
         } // end IF seat display
-        
-       if (area==5)
-       {
-           System.out.println("\n\n__  _");
-           System.out.println("\\ `/ |");
-           System.out.println(" \\__`|");
-           System.out.println(" / /  `-._________________________");
-           System.out.println("'-'\\_____                         `-.");
-           System.out.println("   <____()-  c c c c c F F F F F    -)");
-           System.out.println("     `.___ ,-----,______________...-'");
-           System.out.println("          /    .'");
-           System.out.println("         /   .'");
-           System.out.println("        /  .'");
-           System.out.println("        `-'");
-           
-       }
-       
      } // end WHILE
      
     }  //end MAIN
