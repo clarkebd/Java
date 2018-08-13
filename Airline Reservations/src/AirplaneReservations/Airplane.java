@@ -93,6 +93,23 @@ public class Airplane {
                 }
             }
         } // end IF seat display
+        
+       if (area==5)
+       {
+           System.out.println("\n\n__  _");
+           System.out.println("\\ `/ |");
+           System.out.println(" \\__`|");
+           System.out.println(" / /  `-._________________________");
+           System.out.println("'-'\\_____                         `-.");
+           System.out.println("   <____()-  c c c c c F F F F F    -)");
+           System.out.println("     `.___ ,-----,______________...-'");
+           System.out.println("          /    .'");
+           System.out.println("         /   .'");
+           System.out.println("        /  .'");
+           System.out.println("        `-'");
+           
+       }
+       
      } // end WHILE
      
     }  //end MAIN

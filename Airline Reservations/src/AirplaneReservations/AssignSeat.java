@@ -12,7 +12,9 @@ public class AssignSeat
 
     public void displayWelcome()
     {
+        System.out.println("_________________________________");
         System.out.println(" - - - Airline Reservations - - -");
+        System.out.println("_________________________________\n");
     }
 
     public int askClass()
@@ -22,6 +24,7 @@ public class AssignSeat
         System.out.print("2 - Coach\n");
         System.out.print("3 - List Seats Available\n");
         System.out.print("4 - exit\n");
+        System.out.print("5 - beta feature...\n");
         System.out.print("Choice? ");
 
         Scanner input = new Scanner(System.in);
